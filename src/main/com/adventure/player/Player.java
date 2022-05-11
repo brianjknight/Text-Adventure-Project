@@ -45,7 +45,7 @@ public class Player {
      * @return true if the player's level is enough to open the door.
      */
     public boolean canOpenDoor() {
-        if(level/2.0 > 2){
+        if (level / 2.0 > 2) {
             return true;
         }
         return false;
