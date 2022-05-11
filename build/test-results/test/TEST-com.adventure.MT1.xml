@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.adventure.MT1" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-10T19:10:48" hostname="DESKTOP-QFNEL2B" time="0.028">
+  <properties/>
+  <testcase name="smokeTest()" classname="com.adventure.MT1" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
