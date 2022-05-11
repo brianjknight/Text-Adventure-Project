@@ -14,7 +14,7 @@ public class Player {
     private Shovel shovel;
     private int power = 1;
     private int health = 10;
-    private String name = "Brian";
+    private String name = "";
 
 
     /**
@@ -45,7 +45,7 @@ public class Player {
      * @return true if the player's level is enough to open the door.
      */
     public boolean canOpenDoor() {
-        if(level/2 > 2){
+        if(level/2.0 > 2){
             return true;
         }
         return false;
