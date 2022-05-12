@@ -36,8 +36,8 @@ main/com/adventure/world/objects/TangibleListener.java
  main.com.adventure.world.objects.TangibleListener
 main/com/adventure/world/scenes/SceneFactory.java
  main.com.adventure.world.scenes.SceneFactory
-main/com/adventure/GameInputProcessor.java
- main.com.adventure.GameInputProcessor
+main/com/adventure/player/Player.java
+ main.com.adventure.player.Player
 main/com/adventure/world/scenes/s2_m2/ConsoleScene.java
  main.com.adventure.world.scenes.s2_m2.ConsoleScene
 main/com/adventure/world/scenes/s3_m2/MonsterSwordScene.java
@@ -76,9 +76,9 @@ main/com/adventure/settings/AppSettings.java
  main.com.adventure.settings.AppSettings
  main.com.adventure.settings.AppSettings$1
  main.com.adventure.settings.AppSettings$Story
-main/com/adventure/settings/GameController.java
- main.com.adventure.settings.GameController
 main/com/adventure/CombatController.java
  main.com.adventure.CombatController
-main/com/adventure/player/Player.java
- main.com.adventure.player.Player
+main/com/adventure/GameInputProcessor.java
+ main.com.adventure.GameInputProcessor
+main/com/adventure/settings/GameController.java
+ main.com.adventure.settings.GameController
