@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.adventure.MT3" tests="10" skipped="0" failures="2" errors="0" timestamp="2022-05-12T19:50:27" hostname="DESKTOP-QFNEL2B" time="0.63">
+<testsuite name="com.adventure.MT3" tests="10" skipped="0" failures="2" errors="0" timestamp="2022-05-12T19:57:27" hostname="DESKTOP-QFNEL2B" time="0.643">
   <properties/>
-  <testcase name="testPlayerMovementInvalid()" classname="com.adventure.MT3" time="0.034"/>
-  <testcase name="testPlayerMovementEast()" classname="com.adventure.MT3" time="0.002"/>
-  <testcase name="testPlayerMovementWest()" classname="com.adventure.MT3" time="0.002"/>
-  <testcase name="testInvalidMoveInput()" classname="com.adventure.MT3" time="0.563">
+  <testcase name="testPlayerMovementInvalid()" classname="com.adventure.MT3" time="0.032"/>
+  <testcase name="testPlayerMovementEast()" classname="com.adventure.MT3" time="0.003"/>
+  <testcase name="testPlayerMovementWest()" classname="com.adventure.MT3" time="0.001"/>
+  <testcase name="testInvalidMoveInput()" classname="com.adventure.MT3" time="0.579">
     <failure message="java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 4" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 4
 	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
 	at java.base/java.lang.String.substring(String.java:1874)
@@ -105,9 +105,9 @@
 </failure>
   </testcase>
   <testcase name="testPrompt2()" classname="com.adventure.MT3" time="0.003"/>
-  <testcase name="checkMoveInputEast()" classname="com.adventure.MT3" time="0.001"/>
-  <testcase name="checkMoveInputWest()" classname="com.adventure.MT3" time="0.002"/>
-  <testcase name="testUseInput()" classname="com.adventure.MT3" time="0.013"/>
+  <testcase name="checkMoveInputEast()" classname="com.adventure.MT3" time="0.002"/>
+  <testcase name="checkMoveInputWest()" classname="com.adventure.MT3" time="0.001"/>
+  <testcase name="testUseInput()" classname="com.adventure.MT3" time="0.014"/>
   <testcase name="checkSimpleInput()" classname="com.adventure.MT3" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;look&gt; but was: &lt;look other content that should not be included&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;look&gt; but was: &lt;look other content that should not be included&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)

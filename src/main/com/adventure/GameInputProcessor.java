@@ -33,9 +33,8 @@ public class GameInputProcessor {
      * @return - the Command object with the proper verb and blank object
      */
     private Command buildSimpleCommand(String input) {
-        String verb = input;
-        //String object = input.substring(input.indexOf(" ") + 1);
-        return new Command(verb);
+
+        return new Command(input);
     }
 
     /**
