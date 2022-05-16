@@ -22,18 +22,32 @@ public class Key implements Tangible {
     private String name;
 
     //TODO Add default (i.e. no params) constructor here
+    /**
+    *No parameter constructor defaults.
+     * @level default set to 1.
+     * @name default set to "key".
+     */
     public Key() {
         this.level = 1;
         this.name = "key";
     }
 
     //TODO add constructor that takes a level, and saves it
+    /**
+     * Constructor with 1 parameter for level.
+     * @param level is set for the key.
+     */
     public Key(int level) {
         this.level = level;
         this.name = "key";
     }
 
     //TODO add constructor that takes a level and name, and saves it
+    /**
+     *  Constructor with 2 parameters.
+     *  @param level key level which doors it can open.
+     *  @param name name of the key.
+     */
     public Key(int level, String name) {
         this.level = level;
         this.name = name;
