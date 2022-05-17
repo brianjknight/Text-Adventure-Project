@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.adventure.MT5" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-17T19:08:36" hostname="DESKTOP-QFNEL2B" time="0.047">
+  <properties/>
+  <testcase name="testScene()" classname="com.adventure.MT5" time="0.044"/>
+  <testcase name="testHole()" classname="com.adventure.MT5" time="0.002"/>
+  <system-out><![CDATA[You found: key
+Door is now open
+You found: key
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
