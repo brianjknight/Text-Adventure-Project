@@ -2,6 +2,7 @@ package main.com.adventure;
 
 import main.com.adventure.settings.Command;
 import main.com.adventure.settings.CommandConstants;
+import main.com.adventure.settings.CommandVerb;
 //import org.checkerframework.checker.units.qual.C;
 
 //import java.awt.*;
@@ -34,11 +35,12 @@ public class GameInputProcessor {
      * @return - the Command object with the proper verb and blank object
      */
     private Command buildSimpleCommand(String input) {
+
         if (input.indexOf(" ") == -1) {
-            return new Command(input, "");
+            return new Command(CommandVerb.getVerb(input), "");
         }
         String verb = input.substring(0, input.indexOf(" "));
-        return new Command(verb, "");
+        return new Command(CommandVerb.getVerb(input), "");
     }
 
     /**
@@ -62,11 +64,11 @@ public class GameInputProcessor {
      */
     private Command buildCommandWithObject(String input) {
         if (input.indexOf(" ") == -1) {
-            return new Command(input, "");
+            return new Command(CommandVerb.getVerb(input), "");
         }
         String verb = input.substring(0, input.indexOf(" "));
         String object = input.substring(input.indexOf(" ") + 1);
-        return new Command(verb, object);
+        return new Command(CommandVerb.getVerb(input), object);
     }
 
 

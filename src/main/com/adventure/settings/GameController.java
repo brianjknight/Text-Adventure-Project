@@ -121,23 +121,36 @@ public class GameController {
         getNextCommand();
     }
 
+    /**
+     * Takes a command object to invoke the proper action.
+     * @param command command object which has private variable for CommandVerb enum
+     */
     private void applyCommand(Command command) {
-        if (command.getVerb().equalsIgnoreCase(CommandConstants.LOOK)) {
-            describeCurrentScene();
-        } else if (command.getVerb().equalsIgnoreCase(CommandConstants.MOVE)) {
-            move(command.getObjectName());
-        } else if (command.getVerb().equalsIgnoreCase(CommandConstants.HELP)) {
-            printHelp();
-        } else if (command.getVerb().equalsIgnoreCase(CommandConstants.USE)) {
-            use(command.getObjectName());
-        } else if (command.getVerb().equalsIgnoreCase(CommandConstants.DIG)) {
-            dig();
-        } else if (command.getVerb().equalsIgnoreCase(CommandConstants.EXAMINE)) {
-            examine(command.getObjectName());
-        } else if (command.getVerb().equalsIgnoreCase(CommandConstants.TAKE)) {
-            take(command.getObjectName());
-        } else {
-            printInvalidCommand();
+        switch (command.getVerb()) {
+            case LOOK:
+                describeCurrentScene();
+                break;
+            case MOVE:
+                move(command.getObjectName());
+                break;
+            case HELP:
+                printHelp();
+                break;
+            case USE:
+                use(command.getObjectName());
+                break;
+            case DIG:
+                dig();
+                break;
+            case EXAMINE:
+                examine(command.getObjectName());
+                break;
+            case TAKE:
+                take(command.getObjectName());
+                break;
+            default:
+                printInvalidCommand();
+                break;
         }
     }
 
