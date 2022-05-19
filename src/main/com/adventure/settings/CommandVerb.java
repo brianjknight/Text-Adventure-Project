@@ -27,7 +27,6 @@ public enum CommandVerb {
      */
     public static CommandVerb getVerb(String verbString) {
         CommandVerb result;
-
         if (verbString.equalsIgnoreCase("TAKE")) {
             result = TAKE;
         } else if (verbString.equalsIgnoreCase("MOVE")) {

@@ -40,7 +40,7 @@ public class GameInputProcessor {
             return new Command(CommandVerb.getVerb(input), "");
         }
         String verb = input.substring(0, input.indexOf(" "));
-        return new Command(CommandVerb.getVerb(input), "");
+        return new Command(CommandVerb.getVerb(verb), "");
     }
 
     /**
@@ -68,7 +68,7 @@ public class GameInputProcessor {
         }
         String verb = input.substring(0, input.indexOf(" "));
         String object = input.substring(input.indexOf(" ") + 1);
-        return new Command(CommandVerb.getVerb(input), object);
+        return new Command(CommandVerb.getVerb(verb), object);
     }
 
 
