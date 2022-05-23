@@ -136,6 +136,9 @@ public class GameController {
             case HELP:
                 printHelp();
                 break;
+            case FIGHT:
+                startCombat();
+                break;
             case USE:
                 use(command.getObjectName());
                 break;

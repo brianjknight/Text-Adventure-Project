@@ -41,6 +41,8 @@ public enum CommandVerb {
             result = LOOK;
         } else if (verbString.equalsIgnoreCase("HELP")) {
             result = HELP;
+        } else if (verbString.equalsIgnoreCase("FIGHT")) {
+            result = FIGHT;
         } else if (verbString.equalsIgnoreCase("INVENTORY")) {
             result = INVENTORY;
         } else {
