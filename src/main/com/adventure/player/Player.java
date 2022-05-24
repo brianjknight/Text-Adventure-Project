@@ -10,8 +10,7 @@ public class Player {
 
     public int level = 5;
     private int currentLocationIndex = AppSettings.getStartingLocation();
-    private Key key;
-    private Shovel shovel;
+    private Backpack backpack = new Backpack();
     private int power = 1;
     private int health = 10;
     private String name = "";
@@ -50,10 +49,6 @@ public class Player {
         }
         return false;
     }
-
-
-
-
 
     /**
      * Sprint 2 Module 2
@@ -108,8 +103,8 @@ public class Player {
      * @return the item or null if the item does not exist
      */
     public Tangible getItem(String itemName) {
-        //TODO Complete this function in Sprint 3 Module 3
-        return null;
+        // Complete this function in Sprint 3 Module 3
+        return backpack.getItem(itemName);
     }
 
     /**
@@ -119,7 +114,10 @@ public class Player {
      * @return the removed item
      */
     public Tangible removeItem(Tangible item) {
-        //TODO Complete this function in Sprint 3 Module 3
+        //Complete this function in Sprint 3 Module 3
+        if (backpack.removeItem(item)) {
+            return item;
+        }
         return null;
     }
 
@@ -128,7 +126,8 @@ public class Player {
      * Prints the backpack's inventory.
      */
     public void printItems() {
-        //TODO Complete this function in Sprint 3 Module 3
+        //Complete this function in Sprint 3 Module 3
+        backpack.printItems();
     }
 
     /**
@@ -137,23 +136,32 @@ public class Player {
      * @param item - item to add.
      */
     public void addItem(Tangible item) {
-        //TODO Complete this function
+        //Complete this function
+        backpack.addItem(item);
     }
 
+    /**
+     * Set key held in the backpack object.
+     * @param item - key item to be added to the backpack.
+     */
     public void setKey(Key item) {
-        key = item;
+        backpack.addItem(item);
     }
 
-    public Key getKey() {
-        return key;
+    public Tangible getKey() {
+        return backpack.getItem("key");
     }
 
+    /**
+     * Sets the shovel held  in the backpack object.
+     * @param item shovel item to be added to player's backpack.
+     */
     public void setShovel(Shovel item) {
-        shovel = item;
+        backpack.addItem(item);
     }
 
-    public Shovel getShovel() {
-        return shovel;
+    public Tangible getShovel() {
+        return backpack.getItem("shovel");
     }
 
     //////// DON'T CHANGE THE CODE BELOW. ///////////

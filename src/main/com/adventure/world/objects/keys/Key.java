@@ -32,7 +32,7 @@ public class Key implements Tangible {
         this.name = "key";
     }
 
-    //TODO add constructor that takes a level, and saves it
+    //add constructor that takes a level, and saves it
     /**
      * Constructor with 1 parameter for level.
      * @param level is set for the key.
@@ -42,7 +42,7 @@ public class Key implements Tangible {
         this.name = "key";
     }
 
-    //TODO add constructor that takes a level and name, and saves it
+    //add constructor that takes a level and name, and saves it
     /**
      *  Constructor with 2 parameters.
      *  @param level key level which doors it can open.
@@ -54,11 +54,11 @@ public class Key implements Tangible {
     }
 
     public int getLevel() {
-        //TODO Fix this so it references the level property instead of 0
+        //Fix this so it references the level property instead of 0
         return level;
     }
 
-    //TODO Fix this so it references the name property instead of "key"
+    //Fix this so it references the name property instead of "key"
     @Override
     public String getName() {
         return name;
