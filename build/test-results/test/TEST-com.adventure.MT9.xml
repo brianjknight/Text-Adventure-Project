@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.adventure.MT9" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-25T21:21:02" hostname="DESKTOP-QFNEL2B" time="0.035">
+  <properties/>
+  <testcase name="testOmniDoorKey()" classname="com.adventure.MT9" time="0.035"/>
+  <system-out><![CDATA[Key does not open this door.
+The door is unlocked!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

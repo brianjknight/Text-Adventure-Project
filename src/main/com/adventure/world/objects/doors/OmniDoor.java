@@ -36,7 +36,6 @@ public class OmniDoor implements Tangible {
      */
     private final boolean[] pins = new boolean[pinCount];
 
-
     /**
      * Creates an OmniDoor with the default lock (all true).
      */
@@ -57,7 +56,20 @@ public class OmniDoor implements Tangible {
      * @param key - the key that will be used to attempt to unlock the door
      */
     public void unlock(OmniKey key) {
-        //TODO Complete the function
+        //Complete the function
+        for (int i = 0; i < pins.length; i++) {
+            if (pins[i] != key.pins[i]) {
+                randomizePins();
+                System.out.println("Key does not open this door.");
+                break;
+            }
+            if (i == pins.length - 1) {
+                if (pins[i] == key.pins[i]) {
+                    isOpen = true;
+                    System.out.println("The door is unlocked!");
+                }
+            }
+        }
     }
 
     /**
@@ -75,8 +87,17 @@ public class OmniDoor implements Tangible {
      * all are correct.
      */
     public int getFirstWrongPin(OmniKey key) {
-        //TODO Complete the function
-        return 0;
+        //Complete the function
+        for (int i = 0; i < pins.length; i++) {
+            if (pins[i] != key.pins[i]) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public boolean[] getPins() {
+        return pins;
     }
 
     //Tangible implementation//
